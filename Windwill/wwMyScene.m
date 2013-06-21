@@ -8,44 +8,60 @@
 
 #import "wwMyScene.h"
 
+@interface wwMyScene ()
+
+@property BOOL isContentCreated;
+
+@end
+
 @implementation wwMyScene
 
--(id)initWithSize:(CGSize)size {    
-    if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
-        
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
-        
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+- (void)didMoveToView:(SKView *)view
+{
+    if (!self.isContentCreated) {
+        [self createContent];
+        self.isContentCreated = YES;
     }
-    return self;
+}
+
+- (void)createContent
+{
+    [self setPhysicsBody:[SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame]];
+    
+    SKSpriteNode *windwill = [self createWindwill];
+    [windwill.physicsBody applyAngularImpulse:10];
+    [self addChild:windwill];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
     }
+    SKSpriteNode *windwill = (SKSpriteNode *)[self childNodeWithName:@"windwill"];
+    CGPoint vector = CGPointMake(100, 500);
+    [windwill.physicsBody applyAngularImpulse:10];
 }
 
+- (SKSpriteNode *)createWindwill
+{
+    SKSpriteNode *windwill = [[SKSpriteNode alloc] initWithImageNamed:@"windwill.png"];
+    [windwill setName:@"windwill"];
+    [windwill setPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+//    [windwill setScale:3];
+    
+    [windwill setPhysicsBody:[SKPhysicsBody bodyWithCircleOfRadius:windwill.size.width / 2]];
+  
+    [windwill.physicsBody setMass:10];
+    [windwill.physicsBody setAffectedByGravity:NO];
+    [windwill.physicsBody setAllowsRotation:YES];
+    [windwill.physicsBody setRestitution:1];
+    [windwill.physicsBody setAngularDamping:1];
+    
+    
+    return windwill;
+}
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }

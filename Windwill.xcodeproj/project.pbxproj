@@ -24,6 +24,7 @@
 		531C2EE61773F673008038C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EC11773F673008038C1 /* UIKit.framework */; };
 		531C2EEE1773F673008038C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 531C2EEC1773F673008038C1 /* InfoPlist.strings */; };
 		531C2EF01773F673008038C1 /* WindwillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C2EEF1773F673008038C1 /* WindwillTests.m */; };
+		5383C4B9177427C8003E5C9A /* wwHelloScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383C4B8177427C8003E5C9A /* wwHelloScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		531C2EEB1773F673008038C1 /* WindwillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WindwillTests-Info.plist"; sourceTree = "<group>"; };
 		531C2EED1773F673008038C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		531C2EEF1773F673008038C1 /* WindwillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindwillTests.m; sourceTree = "<group>"; };
+		5383C4B7177427C8003E5C9A /* wwHelloScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwHelloScene.h; sourceTree = "<group>"; };
+		5383C4B8177427C8003E5C9A /* wwHelloScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wwHelloScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				531C2ED11773F673008038C1 /* Main.storyboard */,
 				531C2ED41773F673008038C1 /* wwViewController.h */,
 				531C2ED51773F673008038C1 /* wwViewController.m */,
+				5383C4B7177427C8003E5C9A /* wwHelloScene.h */,
+				5383C4B8177427C8003E5C9A /* wwHelloScene.m */,
 				531C2ED71773F673008038C1 /* wwMyScene.h */,
 				531C2ED81773F673008038C1 /* wwMyScene.m */,
 				531C2EDA1773F673008038C1 /* Spaceship.png */,
@@ -267,6 +272,7 @@
 				531C2ED01773F673008038C1 /* wwAppDelegate.m in Sources */,
 				531C2ECC1773F673008038C1 /* main.m in Sources */,
 				531C2ED61773F673008038C1 /* wwViewController.m in Sources */,
+				5383C4B9177427C8003E5C9A /* wwHelloScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +477,7 @@
 				531C2EF51773F673008038C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		531C2EF61773F673008038C1 /* Build configuration list for PBXNativeTarget "WindwillTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				531C2EF81773F673008038C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

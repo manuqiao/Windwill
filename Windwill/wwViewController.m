@@ -8,7 +8,7 @@
 
 #import "wwViewController.h"
 #import "wwMyScene.h"
-
+#import "wwHelloScene.h"
 @implementation wwViewController
 
 - (void)viewDidLoad
@@ -19,12 +19,14 @@
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
+    skView.showsDrawCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [wwMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [wwHelloScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
+    SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
     [skView presentScene:scene];
 }
 
