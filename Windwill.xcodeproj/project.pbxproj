@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		531C2EBE1773F673008038C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EBD1773F673008038C1 /* Foundation.framework */; };
+		531C2EC01773F673008038C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EBF1773F673008038C1 /* CoreGraphics.framework */; };
+		531C2EC21773F673008038C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EC11773F673008038C1 /* UIKit.framework */; };
+		531C2EC41773F673008038C1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EC31773F673008038C1 /* SpriteKit.framework */; };
+		531C2ECA1773F673008038C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 531C2EC81773F673008038C1 /* InfoPlist.strings */; };
+		531C2ECC1773F673008038C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C2ECB1773F673008038C1 /* main.m */; };
+		531C2ED01773F673008038C1 /* wwAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C2ECF1773F673008038C1 /* wwAppDelegate.m */; };
+		531C2ED31773F673008038C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531C2ED11773F673008038C1 /* Main.storyboard */; };
+		531C2ED61773F673008038C1 /* wwViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C2ED51773F673008038C1 /* wwViewController.m */; };
+		531C2ED91773F673008038C1 /* wwMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C2ED81773F673008038C1 /* wwMyScene.m */; };
+		531C2EDB1773F673008038C1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 531C2EDA1773F673008038C1 /* Spaceship.png */; };
+		531C2EDD1773F673008038C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531C2EDC1773F673008038C1 /* Images.xcassets */; };
+		531C2EE41773F673008038C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EE31773F673008038C1 /* XCTest.framework */; };
+		531C2EE51773F673008038C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EBD1773F673008038C1 /* Foundation.framework */; };
+		531C2EE61773F673008038C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531C2EC11773F673008038C1 /* UIKit.framework */; };
+		531C2EEE1773F673008038C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 531C2EEC1773F673008038C1 /* InfoPlist.strings */; };
+		531C2EF01773F673008038C1 /* WindwillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C2EEF1773F673008038C1 /* WindwillTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		531C2EE71773F673008038C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 531C2EB21773F673008038C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 531C2EB91773F673008038C1;
+			remoteInfo = Windwill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		531C2EBA1773F673008038C1 /* Windwill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Windwill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		531C2EBD1773F673008038C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		531C2EBF1773F673008038C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		531C2EC11773F673008038C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		531C2EC31773F673008038C1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		531C2EC71773F673008038C1 /* Windwill-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Windwill-Info.plist"; sourceTree = "<group>"; };
+		531C2EC91773F673008038C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		531C2ECB1773F673008038C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		531C2ECD1773F673008038C1 /* Windwill-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Windwill-Prefix.pch"; sourceTree = "<group>"; };
+		531C2ECE1773F673008038C1 /* wwAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wwAppDelegate.h; sourceTree = "<group>"; };
+		531C2ECF1773F673008038C1 /* wwAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wwAppDelegate.m; sourceTree = "<group>"; };
+		531C2ED21773F673008038C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		531C2ED41773F673008038C1 /* wwViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wwViewController.h; sourceTree = "<group>"; };
+		531C2ED51773F673008038C1 /* wwViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wwViewController.m; sourceTree = "<group>"; };
+		531C2ED71773F673008038C1 /* wwMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wwMyScene.h; sourceTree = "<group>"; };
+		531C2ED81773F673008038C1 /* wwMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wwMyScene.m; sourceTree = "<group>"; };
+		531C2EDA1773F673008038C1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		531C2EDC1773F673008038C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		531C2EE21773F673008038C1 /* WindwillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindwillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		531C2EE31773F673008038C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		531C2EEB1773F673008038C1 /* WindwillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WindwillTests-Info.plist"; sourceTree = "<group>"; };
+		531C2EED1773F673008038C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		531C2EEF1773F673008038C1 /* WindwillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindwillTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		531C2EB71773F673008038C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531C2EC01773F673008038C1 /* CoreGraphics.framework in Frameworks */,
+				531C2EC21773F673008038C1 /* UIKit.framework in Frameworks */,
+				531C2EC41773F673008038C1 /* SpriteKit.framework in Frameworks */,
+				531C2EBE1773F673008038C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531C2EDF1773F673008038C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531C2EE41773F673008038C1 /* XCTest.framework in Frameworks */,
+				531C2EE61773F673008038C1 /* UIKit.framework in Frameworks */,
+				531C2EE51773F673008038C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		531C2EB11773F673008038C1 = {
+			isa = PBXGroup;
+			children = (
+				531C2EC51773F673008038C1 /* Windwill */,
+				531C2EE91773F673008038C1 /* WindwillTests */,
+				531C2EBC1773F673008038C1 /* Frameworks */,
+				531C2EBB1773F673008038C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		531C2EBB1773F673008038C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				531C2EBA1773F673008038C1 /* Windwill.app */,
+				531C2EE21773F673008038C1 /* WindwillTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		531C2EBC1773F673008038C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				531C2EBD1773F673008038C1 /* Foundation.framework */,
+				531C2EBF1773F673008038C1 /* CoreGraphics.framework */,
+				531C2EC11773F673008038C1 /* UIKit.framework */,
+				531C2EC31773F673008038C1 /* SpriteKit.framework */,
+				531C2EE31773F673008038C1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		531C2EC51773F673008038C1 /* Windwill */ = {
+			isa = PBXGroup;
+			children = (
+				531C2ECE1773F673008038C1 /* wwAppDelegate.h */,
+				531C2ECF1773F673008038C1 /* wwAppDelegate.m */,
+				531C2ED11773F673008038C1 /* Main.storyboard */,
+				531C2ED41773F673008038C1 /* wwViewController.h */,
+				531C2ED51773F673008038C1 /* wwViewController.m */,
+				531C2ED71773F673008038C1 /* wwMyScene.h */,
+				531C2ED81773F673008038C1 /* wwMyScene.m */,
+				531C2EDA1773F673008038C1 /* Spaceship.png */,
+				531C2EDC1773F673008038C1 /* Images.xcassets */,
+				531C2EC61773F673008038C1 /* Supporting Files */,
+			);
+			path = Windwill;
+			sourceTree = "<group>";
+		};
+		531C2EC61773F673008038C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				531C2EC71773F673008038C1 /* Windwill-Info.plist */,
+				531C2EC81773F673008038C1 /* InfoPlist.strings */,
+				531C2ECB1773F673008038C1 /* main.m */,
+				531C2ECD1773F673008038C1 /* Windwill-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		531C2EE91773F673008038C1 /* WindwillTests */ = {
+			isa = PBXGroup;
+			children = (
+				531C2EEF1773F673008038C1 /* WindwillTests.m */,
+				531C2EEA1773F673008038C1 /* Supporting Files */,
+			);
+			path = WindwillTests;
+			sourceTree = "<group>";
+		};
+		531C2EEA1773F673008038C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				531C2EEB1773F673008038C1 /* WindwillTests-Info.plist */,
+				531C2EEC1773F673008038C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		531C2EB91773F673008038C1 /* Windwill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 531C2EF31773F673008038C1 /* Build configuration list for PBXNativeTarget "Windwill" */;
+			buildPhases = (
+				531C2EB61773F673008038C1 /* Sources */,
+				531C2EB71773F673008038C1 /* Frameworks */,
+				531C2EB81773F673008038C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Windwill;
+			productName = Windwill;
+			productReference = 531C2EBA1773F673008038C1 /* Windwill.app */;
+			productType = "com.apple.product-type.application";
+		};
+		531C2EE11773F673008038C1 /* WindwillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 531C2EF61773F673008038C1 /* Build configuration list for PBXNativeTarget "WindwillTests" */;
+			buildPhases = (
+				531C2EDE1773F673008038C1 /* Sources */,
+				531C2EDF1773F673008038C1 /* Frameworks */,
+				531C2EE01773F673008038C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				531C2EE81773F673008038C1 /* PBXTargetDependency */,
+			);
+			name = WindwillTests;
+			productName = WindwillTests;
+			productReference = 531C2EE21773F673008038C1 /* WindwillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		531C2EB21773F673008038C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ww;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ManuQiao;
+				TargetAttributes = {
+					531C2EE11773F673008038C1 = {
+						TestTargetID = 531C2EB91773F673008038C1;
+					};
+				};
+			};
+			buildConfigurationList = 531C2EB51773F673008038C1 /* Build configuration list for PBXProject "Windwill" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 531C2EB11773F673008038C1;
+			productRefGroup = 531C2EBB1773F673008038C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				531C2EB91773F673008038C1 /* Windwill */,
+				531C2EE11773F673008038C1 /* WindwillTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		531C2EB81773F673008038C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531C2ECA1773F673008038C1 /* InfoPlist.strings in Resources */,
+				531C2EDD1773F673008038C1 /* Images.xcassets in Resources */,
+				531C2EDB1773F673008038C1 /* Spaceship.png in Resources */,
+				531C2ED31773F673008038C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531C2EE01773F673008038C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531C2EEE1773F673008038C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		531C2EB61773F673008038C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531C2ED91773F673008038C1 /* wwMyScene.m in Sources */,
+				531C2ED01773F673008038C1 /* wwAppDelegate.m in Sources */,
+				531C2ECC1773F673008038C1 /* main.m in Sources */,
+				531C2ED61773F673008038C1 /* wwViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531C2EDE1773F673008038C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531C2EF01773F673008038C1 /* WindwillTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		531C2EE81773F673008038C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 531C2EB91773F673008038C1 /* Windwill */;
+			targetProxy = 531C2EE71773F673008038C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		531C2EC81773F673008038C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531C2EC91773F673008038C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		531C2ED11773F673008038C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531C2ED21773F673008038C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		531C2EEC1773F673008038C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531C2EED1773F673008038C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		531C2EF11773F673008038C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		531C2EF21773F673008038C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		531C2EF41773F673008038C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Windwill/Windwill-Prefix.pch";
+				INFOPLIST_FILE = "Windwill/Windwill-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		531C2EF51773F673008038C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Windwill/Windwill-Prefix.pch";
+				INFOPLIST_FILE = "Windwill/Windwill-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		531C2EF71773F673008038C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Windwill.app/Windwill";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Windwill/Windwill-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WindwillTests/WindwillTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		531C2EF81773F673008038C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Windwill.app/Windwill";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Windwill/Windwill-Prefix.pch";
+				INFOPLIST_FILE = "WindwillTests/WindwillTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		531C2EB51773F673008038C1 /* Build configuration list for PBXProject "Windwill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531C2EF11773F673008038C1 /* Debug */,
+				531C2EF21773F673008038C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		531C2EF31773F673008038C1 /* Build configuration list for PBXNativeTarget "Windwill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531C2EF41773F673008038C1 /* Debug */,
+				531C2EF51773F673008038C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		531C2EF61773F673008038C1 /* Build configuration list for PBXNativeTarget "WindwillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531C2EF71773F673008038C1 /* Debug */,
+				531C2EF81773F673008038C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 531C2EB21773F673008038C1 /* Project object */;
+}
