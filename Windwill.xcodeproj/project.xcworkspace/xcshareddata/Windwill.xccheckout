@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F88CFAA2-6954-40B3-82FA-4BD702112808</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Windwill</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2288FA6-77BF-49F7-BD16-724D3E82561C</key>
+		<string>https://github.com/manuqiao/Windwill.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Windwill.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2288FA6-77BF-49F7-BD16-724D3E82561C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/manuqiao/Windwill.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2288FA6-77BF-49F7-BD16-724D3E82561C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2288FA6-77BF-49F7-BD16-724D3E82561C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Windwill</string>
+		</dict>
+	</array>
+</dict>
+</plist>
